@@ -1,0 +1,87 @@
+﻿@model IEnumerable<GDataLib.BO.Readings>
+
+@{
+    ViewBag.Title = "Summary";
+}
+
+<h2>Summary</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Date
+        </th>
+        <th>
+            Field
+        </th>
+        <th>
+            Oil (bbl)
+        </th>
+        <th>
+            COND  (bbl)
+        </th>
+        <th>
+            AG (mmscf/d)
+        </th>
+        
+        <th>
+            NAG (mmscf/d)
+        </th>
+        <th>
+            BSW (%)
+        </th>
+        <th>
+            GasLift (mmscf/d)
+        </th>
+        
+        
+        
+
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ReadingsId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ReadingsId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ReadingsId })
+        </td>
+        <td>
+            @String.Format("{0:g}", item.Date)
+        </td>
+        <td>
+            @item.Field
+        </td>
+        <td>
+            @String.Format("{0:F}", item.OilProduced)
+        </td>
+        <td>
+            @String.Format("{0:F}", item.CONGProduced)
+        </td>
+        <td>
+            @String.Format("{0:F}", item.AGProduced)
+        </td>
+         <td>
+            @String.Format("{0:F}", item.NAGProduced)
+        </td>
+         <td>
+            @String.Format("{0:F}", item.BSWProduced)
+        </td>
+        <td>
+            @String.Format("{0:F}", item.GasLift)
+        </td>
+       
+        
+       
+
+        
+    </tr>
+}
+
+</table>
+

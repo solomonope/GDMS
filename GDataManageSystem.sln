@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDataLib", "GDataLib\GDataLib.csproj", "{8CF0DB11-F832-4203-9C72-470CA5BEEFFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDataWeb", "GDataWeb\GDataWeb.csproj", "{549A14FF-A0B2-4B87-AF27-BFAD01EE66AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CF0DB11-F832-4203-9C72-470CA5BEEFFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF0DB11-F832-4203-9C72-470CA5BEEFFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF0DB11-F832-4203-9C72-470CA5BEEFFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF0DB11-F832-4203-9C72-470CA5BEEFFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549A14FF-A0B2-4B87-AF27-BFAD01EE66AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549A14FF-A0B2-4B87-AF27-BFAD01EE66AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549A14FF-A0B2-4B87-AF27-BFAD01EE66AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549A14FF-A0B2-4B87-AF27-BFAD01EE66AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
