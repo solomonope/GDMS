@@ -1,12 +1,14 @@
 ﻿@model IEnumerable<GDataLib.BO.Readings>
 
 @{
-    ViewBag.Title = "Summary";
+    ViewBag.Title = "AllReadings";
 }
 
-<h2>WorkBook Summary</h2>
+<h2>AllReadings</h2>
 
-
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
 <table>
     <tr>
         <th></th>
